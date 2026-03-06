@@ -1,0 +1,27 @@
+{
+  "name": "elevenlabs",
+  "version": "1.0.0",
+  "description": "Text to Speech API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devrazec/elevenlabs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devrazec/elevenlabs/issues"
+  },
+  "homepage": "https://github.com/devrazec/elevenlabs#readme",
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.38.0",
+    "dotenv": "^17.3.1",
+    "xlsx": "^0.18.5"
+  }
+}
