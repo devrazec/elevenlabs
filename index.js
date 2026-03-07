@@ -11,21 +11,20 @@ const elevenlabs = new ElevenLabsClient({
     apiKey: process.env.ELEVENLABS_API_KEY,
 });
 
-// Voice: https://elevenlabs.io/app/api/voice-library?voiceId=uYXf8XasLslADfZ2MB4u
-const VOICE_ID = process.env.ELEVENLABS_VOICE_ID ?? 'fIf7o10He0yWnub1BL80';
-
-//Antoni (male, American)
-//Domi (female, American)
-//Ethan (male, American)
-
-// Male American Voice: fIf7o10He0yWnub1BL80
+// Free Voice options:
+// Female British Voice: fIf7o10He0yWnub1BL80
 // Male American Voice: IITmGTJxaDzkO5w3yYg7
 
-// Paths — pass "answer" as the first CLI argument to switch mode
-// Usage: node index.js answer
-const mode = process.argv[1] === 'answer' ? 'answer' : 'question';
-const xlsxPath = mode === 'answer' ? 'xlsx/828_Answer.xlsx' : 'xlsx/276_Question.xlsx';
-const outputDir = mode === 'answer' ? 'mp3/answer/male' : 'mp3/question/male';
+// Paid Voice options:
+// Femamale American Voice: eYO9Ven76ACQ8Me4zQK4
+// Male American Voice: GzE4TcXfh9rYCU9gVgPp
+
+const VOICE_ID = 'eYO9Ven76ACQ8Me4zQK4';
+
+//const xlsxPath = 'xlsx/828_Answer.xlsx';
+const xlsxPath = 'xlsx/276_Question.xlsx';
+
+const outputDir = 'mp3/question/paidvoices/female';
 
 // Ensure output folder exists
 await fs.promises.mkdir(outputDir, { recursive: true });
