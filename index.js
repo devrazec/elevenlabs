@@ -16,15 +16,28 @@ const elevenlabs = new ElevenLabsClient({
 // Male American Voice: IITmGTJxaDzkO5w3yYg7
 
 // Paid Voice options:
-// Femamale American Voice: eYO9Ven76ACQ8Me4zQK4
-// Male American Voice: GzE4TcXfh9rYCU9gVgPp
+// Female American Voice: eYO9Ven76ACQ8Me4zQK4
+// Female American Lily Rose Voice: t4U671CQHG58R11znrVj
+// 
+// Male American Voice
+// Alex Wright - Clear and Cheerful Voice: GzE4TcXfh9rYCU9gVgPp
 
-const VOICE_ID = 'eYO9Ven76ACQ8Me4zQK4';
+// Female American Voice
+// Lily Rose - Conventional and Happy Voice: t4U671CQHG58R11znrVj
 
-//const xlsxPath = 'xlsx/828_Answer.xlsx';
-const xlsxPath = 'xlsx/276_Question.xlsx';
+// Female American Voice
+// Hope - Bubbly, Gossipy, and Girly Voice: uYXf8XasLslADfZ2MB4u
 
-const outputDir = 'mp3/question/paidvoices/female';
+// Male American Voice
+// Matt - The younger Professor: qyFhaJEAwHR0eYLCmlUT
+
+const VOICE_ID = 'GzE4TcXfh9rYCU9gVgPp';
+
+const xlsxPath = 'xlsx/828_Answer_2.xlsx';
+//const xlsxPath = 'xlsx/276_Question.xlsx';
+
+const outputDir = 'mp3/answer/paidvoices/male/alex';
+//const outputDir = 'mp3/question/paidvoices/male/alex';
 
 // Ensure output folder exists
 await fs.promises.mkdir(outputDir, { recursive: true });
